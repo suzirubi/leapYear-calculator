@@ -3,8 +3,8 @@
   <head>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script type="js/jquery-3.1.1.js"></script>
-    <script type="js/scripts.js"></script>
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/scripts.js"></script>
     <title>Leap Year Calculator</title>
   </head>
   <body>
@@ -13,12 +13,14 @@
       <p>Enter the year you were born and we can tell whether or not it is a leap year?</p>
       <form id="leapYear">
         <div class="form-group">
-          <label for="birthYear">Enter your birth year</label>
-          <input id="birthYear" class="form-control" type="text" placeholder="Type your birth year here">
+          <label for="year">Enter your birth year</label>
+          <input id="year" class="form-control" type="text" placeholder="Type your birth year here">
         </div>
+        <button type="submit" class="btn btn-primary">Find Out!</button>
       </form>
-        <p>Your birth year is:</p>
-        <span id="showYear"></span><br>
+      <div id="result">
+        <p><span id="showYear"></span> is <span class="not"></span> a leap year.</p><br>
+      </div>
     </div>
   </body>
 </html>
